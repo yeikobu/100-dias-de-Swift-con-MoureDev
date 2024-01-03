@@ -40,3 +40,4 @@ var division = Double(x) / 2 //Si esperamos realizar divisiones es mejor parsear
 
 var xEntero: Int = 20 //Le indicamos que erá de tipo entero
 var yFlotante: Double = 18.8 // Le indicamos que será de tipo Double
+
