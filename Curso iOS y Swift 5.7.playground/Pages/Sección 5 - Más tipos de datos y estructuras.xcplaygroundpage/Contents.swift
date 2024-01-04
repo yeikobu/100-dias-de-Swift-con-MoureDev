@@ -146,7 +146,7 @@ enum RawPersonaDataString: String { //En este momento cada uno de los case es de
 
 RawPersonaDataString.firstName.rawValue //nombre
 
-enum RawPersonaDataInt: Int { //En este momento cada uno de los case es de tipo Int
+enum RawPersonaDataInt: Int { //En este momento cada uno de los cases es de tipo Int
     case firstName
     case lastName
     case address
