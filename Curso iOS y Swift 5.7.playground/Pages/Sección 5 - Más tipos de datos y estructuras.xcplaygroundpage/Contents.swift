@@ -154,3 +154,227 @@ enum RawPersonaDataInt: Int { //En este momento cada uno de los cases es de tipo
 }
 
 RawPersonaDataInt.lastName.rawValue //1, porque cuando un enum es de tipo int, todos sus valores pasan a ser númericos comienzan desde el 0
+
+
+//MARK: - Range operator
+var arregloEjemplo = [0,1,2,3,5,6,7,8,9]
+//Two-sided range operator (Operador de rango doble)
+var subSetArreglo = arregloEjemplo[1...3] //Sub set desde la posición 1 hasta la 3
+var subSetArreglo2 = arregloEjemplo[1..<3] //Sub set desde la posición 1 hasta uno antes que la 3
+print(subSetArreglo)
+
+//One-sided range operator (Operador de rango único)
+var subSetArreglo3 = arregloEjemplo[...3] //Sub set desde el principio hasta la tercera posición del arreglo
+var subSetArreglo4 = arregloEjemplo[5...]  //Sub set desde el quinto índice hasta que termine todas las posiciones
+
+//Podemos crear directamente un arreglo de rango cerrado
+var arrayRangoCerrado = [1...3] //IMPORTANTE: Un arreglo de rango cerrado solo alamacena un valor, y ese valor es el rango. No almacena todos los valores del 1 hasta el 3
+//Si queremos transformar o parsear el arreglo de rango cerrado a un arreglo normal, lo podemos hacer de la siguiente forma:
+Array(arrayRangoCerrado[0]) //Creamos un arreglo indicandole que queremos la posición cero, porque el arreglo de rango cerrado solo tiene un valor, en la primera posición
+var subArray = Array(arrayRangoCerrado)
+
+var rangoCerrado = 1...3
+
+
+//MARK: - Operadores desde cero
+//Operador de asignación =
+let numeroConstante = 18
+
+//Operadores Aritmeticos + - * /
+var numeroVariable = 2
+
+numeroConstante + numeroVariable
+numeroConstante - numeroVariable
+numeroConstante * numeroVariable
+numeroConstante / numeroVariable
+
+//Operadores Compuestos
+numeroVariable += 2 //Sería como resumir esto: numeroVariable = numeroVariable + 2
+numeroVariable -= 2
+numeroVariable *= 2
+numeroVariable /= 2
+
+//Operadores de comparación
+var x = 1
+var y = 1
+
+//Igual a ==
+x == y
+
+//Diferente a !=
+x != y
+
+//Mayor que >
+x > y
+
+//Menor que <
+x < y
+
+//Mayor o igual que >=
+x >= y
+
+//Menor o igual que <=
+x <= y
+
+
+//MARK: - If - Else
+var yearsOld = 17
+var cantDinero = 1000
+var sexoFemenino = false
+
+//Si la edad es mayor o igual a 18 O la cantidad de dinero es mayor a 250 Y además eres mujer puedes entrar al bar
+if yearsOld >= 18 || cantDinero > 250 && sexoFemenino {
+    print ("Entras al bar, ya que eres mayor de edad, o, tienes dinero")
+} else {
+    print ("No entras, ya que no eres mayor de edad, o, no tienes el dinero suficiente y eres hombre")
+}
+
+
+//MARK: - Condiciones anidadas
+//Las condiciones anidadas son cuando dentro de una condición o if, hay una o más condiciones
+//Se aconseja no utilizar muchas anidaciones debido a que el código se va tornando difícil de leer
+if yearsOld >= 18 {
+    print ("Entras al bar, ya que eres mayor de edad")
+    if cantDinero >= 250 {
+        print ("Y además tienes dinero")
+        if sexoFemenino {
+            print ("Y también eres mujer")
+        }
+    }
+} else {
+    print ("No entras, ya que no eres mayor de edad, o, no tienes el dinero suficiente y eres hombre")
+}
+
+
+//MARK: - Switch
+//El switch se utiliza cuando tenemos que evaluar muchos casos
+let pais = "CHI"
+
+switch pais {
+case "CHI":
+    print ("El idioma es español")
+case "MX":
+    print ("El idioma es español")
+case "PE":
+    print ("El idioma es español")
+case "JP":
+    print ("El idioma es japonés")
+case "UK":
+    print ("El idioma es inglés")
+default:
+    print ("No conozco tu idioma")
+}
+
+var age = 10
+
+switch age {
+case 0,1,2,3,4,5,6,7,8,10,11:
+    print ("Eres un bebé")
+case 12..<18:  //Podemos indicar que verifique desde el 12 hasta el 18 con un operador de rango
+    print ("Eres un adolescente")
+case 18..<79:
+    print ("Ya estás mayorcito")
+default:
+    print ("Listo para el ataud ☦️")
+}
+
+
+//Switch con enum
+enum PersonalData {
+    case name
+    case surname
+    case address
+    case phone
+}
+
+let userData: PersonalData = .name
+
+switch userData {
+case .name:
+    print ("Aquí debería ir el nombre")
+case .surname:
+    print ("Aquí debería ir el apellido")
+case .address:
+    print ("Aquí debería ir la dirección")
+case .phone:
+    print ("Aquí debería ir el número de teléfono")
+default:
+    print ("Aquí debería arrojar error, sino se cumple ninguno")
+}
+
+
+
+//MARK: - For in
+//Los ciclos for sirven para itinerar sobre una colección de datos/items y ejecutar un bloque de código por cada uno de los items de la selección de rango
+
+var contadora = 0
+for numero in 1...4 { //Iterando un rango del 1 al 4
+    contadora = contadora + 1
+    print (numero)
+    
+}
+
+var paises = ["CHI", "MX", "JP"]
+
+for pais in paises { //Iterando un arreglo
+    print (pais)
+}
+
+var paisesDiccionario = ["CHI":"CHILE", "MX":"MÉXICO", "JP":"JAPÓN"]
+
+for pais in paisesDiccionario { //Iterando un diccionario
+    print (pais) //Al momento de imprimir esta linea, en consola nos imprimirá también el tipo de dato. Por lo tanto, si queremos imprimirlo más bonito, debemos escribirlo como en la línea que sigue.
+}
+
+var paisesDiccionarioBonito = ["CHI":"CHILE", "MX":"MÉXICO", "JP":"JAPÓN"]
+
+for (pais,significado) in paisesDiccionarioBonito { //Iterando un diccionario con su clave y valor para cada elemento
+    print ("\(pais) --> \(significado)") //Para imprimir variables dentro de una cadena de texto debemos poner \()
+}
+
+var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+var suma = 0
+
+for numero in numeros { //Sumando todos los números del arreglo
+    suma = numero + suma  // suma = 1+0 (1) | suma = 2+1 (3) | suma = 3+3 (6) | suma = 4+6 (10) | suma = 5 + 10 (15) | suma = 6+15 (21) ..... etc
+}
+
+print ("La suma de todos los numeros es \(suma)")
+
+
+
+//MARK: - While
+//El while se utiliza para realizar iteraciones mientras que una condición sea verdadera
+while age < 18 { //OJO: la variable age está declarada en el apartado de Switch
+    print ("Eres menor de edad. Te faltan \(18 - edad) años ")
+    age += 1
+}
+
+print ("ya eres mayor de edad")
+
+
+//MARK: - Repeat while
+//A diferencia del while, repeat while siempre entra en ejecución y una vez realizada la primera iteración, se evalua si la condición sigue cumpliéndose
+
+var numero = [1,2,3,4,5,6,7,8,9,10]
+var i = numero.count - 1
+
+repeat {
+    numero.remove(at: i)
+     i -= 1
+    print ("cantidad elementos: \(numero.count)")
+    print ("i = \(i)")
+} while (numero.count > 0)
+
+print ("El arreglo está vacío y su cantidad de elementos es: \(numero.count)")
+
+
+var numeroaleatorio: Int
+var n = 0
+repeat {
+    n += 1
+    numeroaleatorio = Int(arc4random_uniform(10))
+    print ("el ciclo lleva \(n) iteraciones")
+    print ("El número aleatorio: \(numeroaleatorio)")
+    
+} while (numeroaleatorio != 8)
