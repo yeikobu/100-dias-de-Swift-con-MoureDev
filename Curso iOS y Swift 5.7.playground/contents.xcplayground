@@ -4,6 +4,7 @@
         <page name='Sección 3 - Las bases'/>
         <page name='Sección 4 - Todo sobre caracteres y strings'/>
         <page name='Sección 5 - Más tipos de datos y estructuras'/>
-        <page name='Sección 6 - Funciones e introducción a los closures'/>
+        <page name='Sección 6 - Funciones e introducción a los closures'/>
+        <page name='Sección 7 - Introducción a POO'/>
     </pages>
 </playground>
