@@ -24,7 +24,7 @@ struct Cuadrado2 { //Objeto
     }
 }
 
-var miCuadrado2 = cuadrado2()
+var miCuadrado2 = Cuadrado2()
 miCuadrado2.area() //Con esta línea podemos asignar datos directamente dentro del paréntesis.
 
 
@@ -84,10 +84,10 @@ class ClaseAutomovil {
     }
 }
 
-var miObjetoMazda = ClaseAutomovil()
+var miObjetoMazda2 = ClaseAutomovil()
 
-miObjetoMazda.costo
-miObjetoMazda.costo = 5000
+miObjetoMazda2.costo
+miObjetoMazda2.costo = 5000
 print(miObjetoMazda.costo)
 
 struct EstructuraAutomovil {
@@ -124,7 +124,7 @@ print(miSegundaEstructuraMazda.costo)
 
 
 //Imprimimos para revisar si los costos originales cambiaron
-print(miObjetoMazda.costo) //>En este caso se cambio el precio ya que es una clase y apuntan a la misma dirección de memoria
+print(miObjetoMazda2.costo) //>En este caso se cambio el precio ya que es una clase y apuntan a la misma dirección de memoria
 print(miEstructuraMazda.costo) //>En este caso no cambia el precio base, ya que las instancias de estructuras se crean en diferentes espacios de memoria y no apuntan a la misma dirección.
 
 /*Las clases pueden heredar de otras super clases, así como los humanos pueden heredar genes de sus padres, abuelos, etc. Es decir que una clase base puede heredad de una clase padre*/
