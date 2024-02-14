@@ -14,6 +14,7 @@
 		5A0C9AFE2B7A7B6900A628E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0C9AFD2B7A7B6900A628E1 /* Assets.xcassets */; };
 		5A0C9B012B7A7B6900A628E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0C9AFF2B7A7B6900A628E1 /* LaunchScreen.storyboard */; };
 		5A565B972B7D5FDE00E75546 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A565B962B7D5FDE00E75546 /* PageViewController.swift */; };
+		5A565B992B7D62B000E75546 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A565B982B7D62B000E75546 /* GreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5A0C9B002B7A7B6900A628E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A0C9B022B7A7B6900A628E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A565B962B7D5FDE00E75546 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		5A565B982B7D62B000E75546 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				5A0C9AFF2B7A7B6900A628E1 /* LaunchScreen.storyboard */,
 				5A0C9B022B7A7B6900A628E1 /* Info.plist */,
 				5A565B962B7D5FDE00E75546 /* PageViewController.swift */,
+				5A565B982B7D62B000E75546 /* GreenViewController.swift */,
 			);
 			path = "Sección 14 - Vistas y controles de navegación";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				5A0C9AF52B7A7B6700A628E1 /* AppDelegate.swift in Sources */,
 				5A0C9AF72B7A7B6700A628E1 /* SceneDelegate.swift in Sources */,
 				5A565B972B7D5FDE00E75546 /* PageViewController.swift in Sources */,
+				5A565B992B7D62B000E75546 /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
