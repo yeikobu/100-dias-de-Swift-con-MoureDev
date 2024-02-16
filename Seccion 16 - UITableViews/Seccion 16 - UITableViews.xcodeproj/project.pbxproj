@@ -13,6 +13,8 @@
 		5A0B75482B7FAA770042D4A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0B75462B7FAA770042D4A1 /* Main.storyboard */; };
 		5A0B754A2B7FAA790042D4A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0B75492B7FAA790042D4A1 /* Assets.xcassets */; };
 		5A0B754D2B7FAA790042D4A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0B754B2B7FAA790042D4A1 /* LaunchScreen.storyboard */; };
+		5A0B75562B7FDB5F0042D4A1 /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0B75542B7FDB5F0042D4A1 /* MyCustomTableViewCell.swift */; };
+		5A0B75572B7FDB5F0042D4A1 /* MyCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A0B75552B7FDB5F0042D4A1 /* MyCustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5A0B75492B7FAA790042D4A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A0B754C2B7FAA790042D4A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A0B754E2B7FAA790042D4A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A0B75542B7FDB5F0042D4A1 /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
+		5A0B75552B7FDB5F0042D4A1 /* MyCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				5A0B75492B7FAA790042D4A1 /* Assets.xcassets */,
 				5A0B754B2B7FAA790042D4A1 /* LaunchScreen.storyboard */,
 				5A0B754E2B7FAA790042D4A1 /* Info.plist */,
+				5A0B75542B7FDB5F0042D4A1 /* MyCustomTableViewCell.swift */,
+				5A0B75552B7FDB5F0042D4A1 /* MyCustomTableViewCell.xib */,
 			);
 			path = "Seccion 16 - UITableViews";
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			files = (
 				5A0B754D2B7FAA790042D4A1 /* LaunchScreen.storyboard in Resources */,
 				5A0B754A2B7FAA790042D4A1 /* Assets.xcassets in Resources */,
+				5A0B75572B7FDB5F0042D4A1 /* MyCustomTableViewCell.xib in Resources */,
 				5A0B75482B7FAA770042D4A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			files = (
 				5A0B75452B7FAA770042D4A1 /* ViewController.swift in Sources */,
 				5A0B75412B7FAA770042D4A1 /* AppDelegate.swift in Sources */,
+				5A0B75562B7FDB5F0042D4A1 /* MyCustomTableViewCell.swift in Sources */,
 				5A0B75432B7FAA770042D4A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
