@@ -15,6 +15,7 @@
 		5AAEB80E2B83B33900A2DC7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AAEB80C2B83B33900A2DC7D /* LaunchScreen.storyboard */; };
 		5AAEB8162B83B46B00A2DC7D /* Automovil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAEB8152B83B46B00A2DC7D /* Automovil.swift */; };
 		5AAEB8182B83DB3600A2DC7D /* SegundaPantallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAEB8172B83DB3600A2DC7D /* SegundaPantallViewController.swift */; };
+		5AE59D342B8506C0008F61A8 /* AutomovilElectrico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE59D332B8506C0008F61A8 /* AutomovilElectrico.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5AAEB80F2B83B33900A2DC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AAEB8152B83B46B00A2DC7D /* Automovil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automovil.swift; sourceTree = "<group>"; };
 		5AAEB8172B83DB3600A2DC7D /* SegundaPantallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaPantallViewController.swift; sourceTree = "<group>"; };
+		5AE59D332B8506C0008F61A8 /* AutomovilElectrico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomovilElectrico.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				5AAEB80A2B83B33900A2DC7D /* Assets.xcassets */,
 				5AAEB80C2B83B33900A2DC7D /* LaunchScreen.storyboard */,
 				5AAEB80F2B83B33900A2DC7D /* Info.plist */,
+				5AE59D332B8506C0008F61A8 /* AutomovilElectrico.swift */,
 			);
 			path = "Sección 17 - POO intermedio";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				5AAEB8062B83B33700A2DC7D /* ViewController.swift in Sources */,
 				5AAEB8022B83B33700A2DC7D /* AppDelegate.swift in Sources */,
 				5AAEB8162B83B46B00A2DC7D /* Automovil.swift in Sources */,
+				5AE59D342B8506C0008F61A8 /* AutomovilElectrico.swift in Sources */,
 				5AAEB8182B83DB3600A2DC7D /* SegundaPantallViewController.swift in Sources */,
 				5AAEB8042B83B33700A2DC7D /* SceneDelegate.swift in Sources */,
 			);

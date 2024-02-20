@@ -18,13 +18,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func crearAutomovilBaseAction(_ sender: Any) {
-        performSegue(withIdentifier: "segueSengundaPantalla", sender: self)
         tipoAutomovil = .base
+        performSegue(withIdentifier: "segueSengundaPantalla", sender: self)
     }
     
     @IBAction func crearMazdaAction(_ sender: Any) {
-        performSegue(withIdentifier: "segueSengundaPantalla", sender: self)
         tipoAutomovil = .mazda
+        performSegue(withIdentifier: "segueSengundaPantalla", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
