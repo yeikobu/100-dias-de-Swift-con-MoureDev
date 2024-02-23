@@ -20,15 +20,39 @@
                                 <rect key="frame" x="126" y="326" width="110" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aUO-aQ-CEh">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aUO-aQ-CEh">
                                 <rect key="frame" x="16" y="119" width="361" height="683"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cF-Zd-UFa">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="683"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="170.66666666666666"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Constraints de posición"/>
                                         <connections>
                                             <segue destination="TRn-5k-QHZ" kind="show" id="W9i-Ps-HdT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtR-2O-4Tq">
+                                        <rect key="frame" x="0.0" y="170.66666666666669" width="361" height="171"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Constraints de altura y anchura"/>
+                                        <connections>
+                                            <segue destination="uEu-NG-rZb" kind="show" id="Yrc-HZ-1KK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uuj-6f-wzK">
+                                        <rect key="frame" x="0.0" y="341.66666666666669" width="361" height="170.66666666666669"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Modificar constraints por código"/>
+                                        <connections>
+                                            <segue destination="TUk-fT-lNQ" kind="show" id="QST-yr-umK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzo-U8-Edo">
+                                        <rect key="frame" x="0.0" y="512.33333333333337" width="361" height="170.66666666666663"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Crear constraint por código"/>
+                                        <connections>
+                                            <segue destination="9pj-FP-9Eo" kind="show" id="oQZ-cu-Ewa"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -48,6 +72,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="4"/>
+        </scene>
+        <!--Crear constraint por código-->
+        <scene sceneID="qig-cE-QE7">
+            <objects>
+                <viewController title="Crear constraint por código" id="9pj-FP-9Eo" customClass="CreateConstraintsViewController" customModule="Seccion_19___Auto_layout_avanzado" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pJa-Dl-gmU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L3a-b7-rtX">
+                                <rect key="frame" x="76" y="316" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e7q-9x-hbS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Crear constraint por código" id="SLd-va-Bcw"/>
+                    <connections>
+                        <outlet property="yellowView" destination="L3a-b7-rtX" id="Y17-UE-8VR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9a-bD-P31" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="373"/>
         </scene>
         <!--Constraints de posición-->
         <scene sceneID="z3k-AC-zZB">
@@ -95,7 +145,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ADu-pn-fJg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="936.64122137404581" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="934" y="-701"/>
+        </scene>
+        <!--Constraints de altura y anchura-->
+        <scene sceneID="myM-gH-lgq">
+            <objects>
+                <viewController title="Constraints de altura y anchura" id="uEu-NG-rZb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MHm-Wj-OWa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4C-BD-f6b">
+                                <rect key="frame" x="32" y="135" width="200" height="300"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="atU-I1-y4C"/>
+                                    <constraint firstAttribute="width" constant="200" id="kxq-fh-ITj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rrF-0V-MUt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B4C-BD-f6b" firstAttribute="leading" secondItem="rrF-0V-MUt" secondAttribute="leading" constant="32" id="3oj-mY-VqU"/>
+                            <constraint firstItem="B4C-BD-f6b" firstAttribute="top" secondItem="rrF-0V-MUt" secondAttribute="top" constant="32" id="lUU-cc-ZjC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Constraints de altura y anchura" id="pbM-xY-5fD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhk-jI-PVi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1648" y="-701"/>
+        </scene>
+        <!--Modificar constraints por código-->
+        <scene sceneID="hiJ-WZ-gRU">
+            <objects>
+                <viewController title="Modificar constraints por código" id="TUk-fT-lNQ" customClass="ModifyConstraintsViewController" customModule="Seccion_19___Auto_layout_avanzado" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9jr-ev-7KO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5w-pU-g5S">
+                                <rect key="frame" x="16" y="119" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fHi-Gm-k6i"/>
+                                    <constraint firstAttribute="width" constant="100" id="np2-Lp-QGH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YiE-gk-Zl1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T5w-pU-g5S" firstAttribute="leading" secondItem="YiE-gk-Zl1" secondAttribute="leading" constant="16" id="1jZ-2c-JXw"/>
+                            <constraint firstItem="T5w-pU-g5S" firstAttribute="top" secondItem="YiE-gk-Zl1" secondAttribute="top" constant="16" id="C9Q-fD-hda"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Modificar constraints por código" id="UEu-1r-bvT"/>
+                    <connections>
+                        <outlet property="heightConstraint" destination="fHi-Gm-k6i" id="J75-B2-efC"/>
+                        <outlet property="topConstraint" destination="C9Q-fD-hda" id="8zF-iX-mLq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SUE-Wp-xAO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2358" y="-701"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OoF-O2-nce">
@@ -119,13 +233,22 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
