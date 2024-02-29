@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Sección 20 - Calculator
+//  Sección 20 - Calculadora
 //
-//  Created by Jacob Aguilar on 28-02-24.
+//  Created by Jacob Aguilar on 29-02-24.
 //
 
 import UIKit
@@ -15,20 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        //Setup
+        //SETUP
         setupView()
-        
         return true
     }
-    
 
-//MARK: - Private methods
-    private func setupView() {
+        
+    //MARK: - Private methods
+    func setupView() {
         window = UIWindow(frame: UIScreen.main.bounds)
         let vc = HomeViewController()
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
     }
-    
+
 }
 
