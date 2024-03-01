@@ -15,6 +15,7 @@
 		5A7B50FD2B9098C9000453F8 /* Seccio_n_20___CalculadoraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B50FC2B9098C9000453F8 /* Seccio_n_20___CalculadoraUITestsLaunchTests.swift */; };
 		5A7B510F2B909FD9000453F8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B510D2B909FD9000453F8 /* HomeViewController.swift */; };
 		5A7B51102B909FD9000453F8 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A7B510E2B909FD9000453F8 /* HomeView.xib */; };
+		5AA8B5C62B922FBA00F9D008 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA8B5C52B922FBA00F9D008 /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5A7B50FC2B9098C9000453F8 /* Seccio_n_20___CalculadoraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Seccio_n_20___CalculadoraUITestsLaunchTests.swift"; sourceTree = "<group>"; };
 		5A7B510D2B909FD9000453F8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5A7B510E2B909FD9000453F8 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		5AA8B5C52B922FBA00F9D008 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 		5A7B51122B90A296000453F8 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				5AA8B5C52B922FBA00F9D008 /* UIButtonExtension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			files = (
 				5A7B50DA2B9098C6000453F8 /* AppDelegate.swift in Sources */,
 				5A7B510F2B909FD9000453F8 /* HomeViewController.swift in Sources */,
+				5AA8B5C62B922FBA00F9D008 /* UIButtonExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
